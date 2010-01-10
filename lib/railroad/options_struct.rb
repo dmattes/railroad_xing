@@ -20,6 +20,7 @@ class OptionsStruct < OpenStruct
                      :label => false,
                      :modules => false,
                      :hide_magic => false,
+                     :show_magic => false,
                      :hide_types => false,
                      :hide_public => false,
                      :hide_protected => false,
@@ -74,6 +75,9 @@ class OptionsStruct < OpenStruct
       end
       opts.on("--hide-magic", "Hide magic field names") do |h|
         self.hide_magic = h
+      end
+      opts.on("--show-magic", "Show magic field names") do |h|
+        self.show_magic = h
       end
       opts.on("--hide-types", "Hide attributes type") do |h|
         self.hide_types = h
