@@ -31,7 +31,7 @@ class AR_Model
       magic_fields << @klass.table_name + "_count" if @klass.respond_to? 'table_name' 
       content_columns = @klass.content_columns.select {|c| ! magic_fields.include? c.name}
     else
-      content_columns = @klass.content_columns
+      content_columns = @klass.columns
     end
     
     content_columns.each do |a|

@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{railroad_xing}
+  s.name = %q{dmattes-railroad_xing}
   s.version = "0.5.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Roy Wright"]
-  s.date = %q{2009-12-07}
+  s.authors = ["Roy Wright, modified by Daniel Mattes"]
+  s.date = %q{2010-01-10}
   s.default_executable = %q{railroad}
-  s.email = %q{roy@wright.org}
+  s.email = %q{dm@actsasblog.de}
   s.executables = ["railroad"]
   s.extra_rdoc_files = [
     "ChangeLog",
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
      "lib/railroad/rails_framework.rb",
      "railroad_xing.gemspec"
   ]
-  s.homepage = %q{http://github.com/royw/railroad_xing}
+  s.homepage = %q{http://github.com/dmattes/railroad_xing}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
